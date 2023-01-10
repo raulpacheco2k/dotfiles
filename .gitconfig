@@ -1,34 +1,34 @@
 [user]
-	name = Raul Pacheco
-	email = eu@raulpacheco.com.br
-  
+    name = Raul Pacheco
+    email = eu@raulpacheco.com.br
+
 [alias]
-	s = status -s
-	c = commit
-	cc = checkout
-	cb = checkout -b
-	cl = clean
-	log = log --graph --decorate --oneline
-	amend = commit --amend --reuse-message=HEAD
-  contributors = shortlog --summary --numbered
-  branches = branch -a
+    s = status -s
+    c = commit
+    cc = checkout
+    cb = checkout -b
+    cl = clean
+    log = log --graph --decorate --oneline
+    amend = commit --amend --reuse-message=HEAD
+    contributors = shortlog --summary --numbered
+    branches = branch -a
 
 [color "branch"]
-  current = yellow reverse
-  local = cyan
-  remote = green
+    current = yellow reverse
+    local = cyan
+    remote = green
 
 [color "status"]
-  added = green
-  changed = yellow
-  untracked = red
+    added = green
+    changed = yellow
+    untracked = red
 
 [color "diff"]
-	old = red
-	new = green
+    old = red
+    new = green
 
 [help]
-	autocorrect = 1
+    autocorrect = 1
 
 [init]
     defaultBranch = main

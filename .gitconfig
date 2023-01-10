@@ -24,8 +24,8 @@
     untracked = red
 
 [color "diff"]
-    old = red
-    new = green
+    old = red reverse
+    new = green reverse
 
 [help]
     autocorrect = 1

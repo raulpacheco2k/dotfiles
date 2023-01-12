@@ -2,6 +2,23 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# User settings
+## Ff user is not root, pass all commands via sudo
+if [ $UID -ne 0 ]; then
+    alias reboot='sudo reboot'
+    alias shutdown = 'sudo shutdown'
+    alias update='sudo apt update -y'
+    alias upgrade='sudo apt upgrade -y'
+fi
+
+alias c='clear'
+alias f='find . |grep '
+alias h='history|grep '
+alias ..='cd ..'
+alias pg='ping google.com'
+alias ports='netstat -tulanp'
+alias pipv='. venv/bin/pip3'
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -91,9 +108,6 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias pipv='. venv/bin/pip3'
-alias f='find . |grep '
-alias h='history|grep '
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

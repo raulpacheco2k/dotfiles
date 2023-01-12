@@ -6,7 +6,7 @@
 ## Ff user is not root, pass all commands via sudo
 if [ $UID -ne 0 ]; then
     alias reboot='sudo reboot'
-    alias shutdown = 'sudo shutdown'
+    alias shutdown='sudo shutdown'
     alias update='sudo apt update -y'
     alias upgrade='sudo apt upgrade -y'
 fi

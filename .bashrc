@@ -3,7 +3,7 @@
 # for examples
 
 # User settings
-## Ff user is not root, pass all commands via sudo
+## If user is not root, pass all commands via sudo
 if [ $UID -ne 0 ]; then
     alias reboot='sudo reboot'
     alias shutdown='sudo shutdown'

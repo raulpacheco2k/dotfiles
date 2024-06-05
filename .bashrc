@@ -11,6 +11,7 @@ if [ $UID -ne 0 ]; then
     alias upgrade='sudo apt upgrade -y'
 fi
 
+alias llama3='ollama run llama3'
 alias c='clear'
 alias f='find . |grep '
 alias h='history|grep '

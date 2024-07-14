@@ -11,13 +11,13 @@ if [ $UID -ne 0 ]; then
     alias upgrade='sudo apt upgrade -y'
 fi
 
-alias llama3='ollama run llama3'
-alias c='clear'
 alias f='find . |grep '
 alias h='history|grep '
 alias ..='cd ..'
 alias pg='ping google.com'
 alias ports='netstat -tulanp'
+alias bashrc='nano ~/.bashrc'
+alias llama3='ollama run llama3'
 alias pipv='. venv/bin/pip3'
 alias obisian='AppImages/Obsidian-1.5.12.AppImage --no-sandbox'
 

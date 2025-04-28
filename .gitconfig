@@ -1,34 +1,38 @@
+[credential]
+    helper = store
 [user]
-    name = Raul Pacheco
+    name = raulpacheco2k
     email = eu@raulpacheco.com.br
-
 [alias]
     s = status -s
     c = commit
     cc = checkout
     cb = checkout -b
     cl = clean
-    log = log --graph --decorate --oneline
+    l = log --graph --decorate --oneline
     amend = commit --amend --reuse-message=HEAD
     contributors = shortlog --summary --numbered
     branches = branch -a
-
 [color "branch"]
     current = yellow reverse
     local = cyan
     remote = green
-
 [color "status"]
     added = green
     changed = yellow
     untracked = red
-
 [color "diff"]
     old = red reverse
     new = green reverse
-
 [help]
     autocorrect = 1
-
 [init]
     defaultBranch = main
+[gpg]
+    format = ssh
+[commit]
+    gpgsign = true
+[tag]
+    gpgsign = true
+[gpg "ssh"]
+    allowedSignersFile = /home/raulpacheco2k/.git_allowed_signers

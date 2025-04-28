@@ -17,9 +17,9 @@ alias ..='cd ..'
 alias pg='ping google.com'
 alias ports='netstat -tulanp'
 alias bashrc='nano ~/.bashrc'
-alias llama3='ollama run llama3'
+alias llama3='ollama run gemma3:1b'
 alias pipv='. venv/bin/pip3'
-alias obisian='AppImages/Obsidian-1.5.12.AppImage --no-sandbox'
+
 
 # If not running interactively, don't do anything
 case $- in

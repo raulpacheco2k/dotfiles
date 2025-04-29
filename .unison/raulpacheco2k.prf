@@ -1,6 +1,6 @@
 # Define diretórios root que serão usados como origem para sincronização.
 root = /home/raulpacheco2k
-root = /media/raulpacheco2k/Kingston/raulpacheco2k
+root = /mnt/Kingston/raulpacheco2k
 
 # Lista subpastas específicas que devem ser sincronizadas dentro dos diretórios root.
 path = Documentos

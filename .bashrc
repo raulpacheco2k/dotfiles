@@ -11,6 +11,8 @@ if [ $UID -ne 0 ]; then
     alias upgrade='sudo apt upgrade -y'
 fi
 
+alias up='docker compose up -d'
+alias down='docker compose down'
 alias f='find . |grep '
 alias h='history|grep '
 alias ..='cd ..'
@@ -20,6 +22,16 @@ alias bashrc='nano ~/.bashrc'
 alias llama3='ollama run gemma3:1b'
 alias pipv='. venv/bin/pip3'
 
+dockerreset() {
+  docker rm -f $(docker ps -aq) 2>/dev/null
+  docker rmi -f $(docker images -aq) 2>/dev/null
+  docker volume rm $(docker volume ls -q) 2>/dev/null
+  docker network rm $(docker network ls -q | grep -vE '^(bridge|host|none)$') 2>/dev/null
+  docker secret rm $(docker secret ls -q) 2>/dev/null
+  docker config rm $(docker config ls -q) 2>/dev/null
+  docker plugin rm -f $(docker plugin ls -q) 2>/dev/null
+  docker system prune -af --volumes
+}
 
 # If not running interactively, don't do anything
 case $- in

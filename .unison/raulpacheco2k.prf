@@ -8,6 +8,7 @@ path = Downloads
 path = Imagens
 path = Projetos
 path = Vídeos
+path = Músicas
 
 # Define padrões de arquivos e diretórios que devem ser ignorados durante a sincronização.
 ignore = Name {*.log}
